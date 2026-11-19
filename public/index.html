@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="csrf" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Nistha’s Content Pillars — Find what your audience really wants.</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Nistha’s Content Pillars</div>
+    <nav class="top-links">
+      <a href="#form-section">Get ideas</a>
+      
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero hero-boardy">
+      <div class="hero-copy">
+        <div class="eyebrow accent">RESEARCH-FIRST CONTENT STRATEGY</div>
+        <h1>Use conversations to land clients with content</h1>
+        <p>Research real community pain points, questions, complaints, and industry conversations, then turn them into six evidence-backed content ideas built around your offer.</p>
+        <div class="hero-actions">
+          <a href="#form-section" class="primary linkbutton">Give me 6 content ideas</a>
+          <span class="hero-note">One page. Real research. Ideas built for conversion.</span>
+        </div>
+        <div class="hero-tags">
+          <span>Reddit & forum research</span>
+          <span>Binge-worthy angles</span>
+          <span>Clear service tie-in</span>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <img class="deco deco-post" src="/static/wave.webp" alt="">
+        <img class="deco deco-talk" src="/static/talk.webp" alt="">
+        
+      </div>
+    </section>
+
+    <section id="form-section" class="intake-section">
+      <div class="section-intro"><img class="section-icon" src="/static/people.webp" alt="">
+        <div class="eyebrow accent">01 / TELL US ABOUT YOUR BUSINESS</div>
+        <h2>Start with the essentials.</h2>
+        <p class="muted">These inputs shape the research, the six content ideas, and the business recommendations.</p>
+      </div>
+      <section class="panel intake-panel">
+        <form id="research">
+          <label>Industry / niche
+            <input name="industry" required maxlength="3000" placeholder="e.g. B2B marketing consulting">
+          </label>
+          <label>Ideal customer profile
+            <textarea name="icp" required maxlength="3000" placeholder="Who are they? What is their role, company size, or situation?"></textarea>
+          </label>
+          <label>Products or services
+            <textarea name="offer" required maxlength="3000" placeholder="What do you sell? What outcomes can you deliver?"></textarea>
+          </label>
+          <div class="two">
+            <label>Target country
+              <input name="country" required maxlength="200" placeholder="Canada">
+            </label>
+            <label>Publishing platform
+              <select name="platform">
+                <option>LinkedIn</option><option>Instagram</option><option>YouTube</option><option>Newsletter</option><option>Blog</option><option>TikTok</option><option>X</option>
+              </select>
+            </label>
+          </div>
+          <label>Competitors <span class="muted">(optional)</span>
+            <input name="competitors" maxlength="3000" placeholder="Names or websites">
+          </label>
+          <button class="primary" id="run">Give me 6 content ideas <span>↗</span></button>
+          <p class="tiny">Inputs are sent to the AI research service and saved with your report and any feedback you submit. Avoid confidential customer information. Newsletter signup is optional and separate from visitor analytics.</p>
+        </form>
+        <div id="status" role="status" aria-live="polite"></div>
+      </section>
+    </section>
+
+    <section class="support-grid">
+      <section class="panel soft-panel"><img class="section-icon" src="/static/heart.webp" alt="">
+        <div class="eyebrow accent">WHAT YOU GET</div>
+        <h2>From audience signals to ideas with a real point of view.</h2>
+        <div class="feature-list">
+          <div class="feature"><b>01</b><div>Research pulled from public conversations.<small>Reddit, forums and industry discussions that reveal what people struggle with, ask for, or debate.</small></div></div>
+          <div class="feature"><b>02</b><div>Six ideas people actually want to click.<small>Curiosity-driven titles with why they matter, source evidence, and how your offer helps.</small></div></div>
+          <div class="feature"><b>03</b><div>Built for strategy, not fluff.<small>Frameworks, recurring pain points, and thought-leadership angles designed to be memorable.</small></div></div>
+        </div>
+      </section>
+      <section class="panel note-panel"><img class="section-icon" src="/static/comment.webp" alt="">
+        <b>Evidence, not assumptions.</b>
+        <p>We include source links, explain why each idea was selected, and note research gaps or uncertainty when relevant.</p>
+      </section>
+    </section>
+
+    <section class="privacy" id="privacy">
+      <div>
+        <b>Help us improve Nistha’s Content Pillars</b>
+        <p>Optional analytics record visit times, approximate country (if available), device, referring site and time with the page visible. Your name or email is optional. No raw IP is stored by the app. Analytics are not required to generate ideas.</p>
+        <label>Optional name or email<input id="identity" maxlength="150" placeholder="Leave blank to remain anonymous"></label>
+      </div>
+      <div class="privacyactions">
+        <button id="accept" class="primary">Allow analytics</button>
+        <button id="decline" class="secondary">No thanks</button>
+      </div>
+    </section>
+
+    <section class="panel founder">
+      <img src="/static/nistha.webp" alt="Nistha" width="220" height="220">
+      <div>
+        <div class="eyebrow accent">MEET THE CREATOR</div>
+        <h2>Hi, I’m Nistha.</h2>
+        <p>I created this tool to help businesses connect their content to the real problems their customers face.</p>
+        <a href="mailto:nisthagautam0@gmail.com">Get in touch ↗</a>
+      </div>
+    </section>
+
+    <footer>Nistha’s Content Pillars <span>Research-driven ideas. Human-led content.</span></footer>
+  </main>
+  <script src="/static/app.js" defer></script>
+</body>
+</html>

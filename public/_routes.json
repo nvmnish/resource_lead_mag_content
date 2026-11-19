@@ -1,0 +1,1 @@
+{"version":1,"include":["/api/*","/oauth/*","/admin","/admin.csv","/admin-feedback.csv"],"exclude":[]}

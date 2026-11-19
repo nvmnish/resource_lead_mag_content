@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="csrf" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Nistha’s Content Pillars — Find what your audience really wants.</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">Nistha’s Content Pillars</div>
+    <nav class="top-links">
+      <a href="/#form-section">New research</a>
+      
+    </nav>
+  </header>
+
+<main class="results-page"><section id="loading" class="loading" aria-live="polite"><img src="/static/talk.webp" alt="" width="210"><h1 id="phase">Searching…</h1><p id="phase-copy">Finding conversations and developing your ideas.</p><div class="progress-dots" aria-hidden="true"><i></i><i></i><i></i></div><p id="load-error" role="alert"></p><button id="retry" class="primary" hidden>Try again</button><a href="/#form-section">Back to your inputs</a></section><section id="research-progress" class="panel research-progress" hidden aria-live="polite"><div class="eyebrow accent">RESEARCH IN PROGRESS</div><h2>We’re building your six content ideas.</h2><p id="research-progress-copy">Searching real conversations, identifying patterns and matching opportunities to your offer. Your results will appear here when ready.</p><p id="research-progress-error" role="alert"></p><button id="progress-retry" class="primary" hidden>Try again</button></section><section id="results-anchor"></section>
+    <section id="results" hidden>
+      <div class="eyebrow accent">02 / YOUR OPPORTUNITIES</div>
+      <h2 class="section-title">Six ideas worth exploring.</h2>
+              <aside class="quote panel">
+          <h2>Want this implemented?</h2>
+          <p>Email Nistha to get a quote for content that solves your clients exact pain point. All you need to do is hit send. Your client is one button away.</p>
+          <a class="primary linkbutton" id="email-nistha" href="mailto:nisthagautam0@gmail.com">Email Nistha</a>
+          <p class="tiny">Don't worry, you'll not be added to an email list unless you opt in:))</p>
+          <fieldset>
+            <legend>Opt into newsletter?</legend>
+            <p class="tiny">I share insights on my own data experiments on content, what converts and why and I'd be an honor to get your thougths on it, if it's useful to you</p>
+            <label class="choice"><input type="checkbox" id="newsletter-yes"> Yes</label>
+            <label class="choice"><input type="checkbox" id="newsletter-no" checked> No</label>
+            <div id="newsletter-details" hidden>
+              <label>Full name<input id="newsletter-name" maxlength="150" autocomplete="name"></label>
+              <label>Email address<input id="newsletter-email" type="email" maxlength="254" autocomplete="email"></label>
+              <p class="tiny">Your name and email will be saved with your newsletter choice for Nistha. You can change your preference here.</p>
+            </div>
+            <button type="button" class="secondary" id="save-newsletter">Save newsletter preference</button>
+            <p id="newsletter-status" class="tiny" role="status"></p>
+          </fieldset>
+        </aside>
+      <div id="summary" class="panel"></div>
+      <div class="results-layout">
+        <div id="ideas" class="ideas"></div>
+
+      </div>
+<details class="panel" id="researchnotes">
+        <summary>Full research notes & search sources</summary>
+        <div id="brief"></div>
+        <div id="catalog"></div>
+      </details>
+      <section class="panel export"><img class="section-icon" src="/static/send.webp" alt="">
+        <h2>Want to take this research with you?</h2>
+        <p>Would you like us to create a Google Doc with your research, six content ideas and source links?</p>
+        <form id="delivery"><label>Your email address<input id="delivery-email" type="email" required maxlength="254" autocomplete="email"></label><button id="send-doc" class="primary">Email me my Google Doc</button></form><a id="export" class="secondary linkbutton" target="_blank" rel="noopener">Create with my Google account instead ↗</a>
+        <button class="secondary" id="noexport">Not now</button>
+        <p class="tiny" id="exportnote">Your email is used to deliver this report, not to subscribe you to a newsletter.</p>
+      </section>
+
+
+    </section>
+
+<footer>Nistha’s Content Pillars</footer></main><script src="/static/app.js" defer></script><script src="/static/results.js" defer></script></body></html>
