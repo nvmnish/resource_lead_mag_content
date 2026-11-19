@@ -1,0 +1,38 @@
+openapi: 3.0.3
+info:
+  title: Nistha's Content Pillars — Private Analytics
+  version: 1.0.0
+  description: Read-only aggregated, privacy-minimized analytics from Cloudflare D1.
+servers:
+  - url: https://YOUR-PROJECT.pages.dev
+paths:
+  /api/analytics:
+    get:
+      operationId: getContentPillarsAnalytics
+      summary: Get current Content Pillars engagement and usage summary
+      description: Returns aggregates and anonymized recent sessions; no visitor names, contact emails or IP addresses.
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: query
+          name: days
+          schema:
+            type: integer
+            minimum: 1
+            maximum: 90
+            default: 7
+      responses:
+        '200':
+          description: Analytics summary
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+        '401':
+          description: Missing or invalid authentication token
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer

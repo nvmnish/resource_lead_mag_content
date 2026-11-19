@@ -1,0 +1,1 @@
+{"name":"nisthas-content-pillars","private":true,"type":"module","scripts":{"check":"node --check 'functions/[[path]].js' && node --check public/static/app.js && node --check public/static/results.js && node --check prompts.js"}}
